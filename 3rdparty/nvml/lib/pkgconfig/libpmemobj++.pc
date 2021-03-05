@@ -1,0 +1,12 @@
+prefix=/home/brian/other_implementations/pmemkv/3rdparty/nvml
+libdir=/home/brian/other_implementations/pmemkv/3rdparty/nvml/lib
+version=0.0-26-gc38cbbc
+includedir=${prefix}/include/libpmemobj
+
+Name: libpmemobj++
+Description: C++ bindings for the libpmemobj library from NVML project
+Version: ${version}
+URL: http://pmem.io/nvml
+Requires.private:
+Libs: -L${libdir} -lpmemobj
+Cflags: -I${includedir}

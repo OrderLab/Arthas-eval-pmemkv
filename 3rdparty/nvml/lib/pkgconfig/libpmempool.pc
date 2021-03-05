@@ -1,0 +1,13 @@
+prefix=/home/brian/other_implementations/pmemkv/3rdparty/nvml
+libdir=/home/brian/other_implementations/pmemkv/3rdparty/nvml/lib
+version=0.0-26-gc38cbbc
+includedir=${prefix}/include
+
+Name: libpmempool
+Description: libpmempool library from NVML project
+Version: ${version}
+URL: http://pmem.io/nvml
+Requires: libpmem
+Libs: -L${libdir} -lpmempool
+Libs.private: -ldl
+Cflags: -I${includedir}

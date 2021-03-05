@@ -1,0 +1,7 @@
+#!/bin/bash
+make -j16
+make example
+make example
+
+#cleaning up
+./refreshScript
