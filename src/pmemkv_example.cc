@@ -69,12 +69,12 @@ int main() {
       assert(s == OK);
       std::string value5;
       s = kv->Get("key1", &value5);
-      //for(int i = 2; i < 3; i++){
+      for(int i = 2; i < 3; i++){
       //for(int i = 2; i < 16342000; i++){
-      for(int i = 2; i < 1000; i++){
+      //for(int i = 2; i < 1000; i++){
           snprintf(keybuf, sizeof(keybuf), "%s%d\n", "key", i);
           snprintf(valuebuf, sizeof(valuebuf), "%s%d\n", "value", i);
-          printf("i is %d\n", i);
+          //printf("i is %d\n", i);
           s2 = kv->Put(keybuf, valuebuf);
        }
     LOG("Deleting existing value");
