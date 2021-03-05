@@ -1,7 +1,7 @@
 #!/bin/bash
 make -j16
 make example
-make example
+time make example
 
 #cleaning up
 ./refreshScript
